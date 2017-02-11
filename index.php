@@ -14,24 +14,23 @@
   </head>
   <body>
       <div id="wrapper">
-          <div class="controls">
+          <div class="controls">  <!-- Clase de botones de control de mixitup -->
             <div>Los números deben ser enteros y no deben repetirse</div>
-            <button class="item button" data-ref="button-add-new">Agregar números</button>
+            <button class="item button" data-ref="button-add-new">Agregar números</button>  <!-- Llama a la función buttonAddNew de mixitup -->
           </div>
           <form action="result.php" id="the-form"  method="post"  >
-              <div id="container" class="container" data-ref="container">
+              <div id="container" class="container" data-ref="container">  <!-- Contiene a los elementos de mixitup  -->
                   <div class="mix1" data-myorder="1"><input type="text" data-validation="number" data-validation-allowing="range[-99;999],negative" step="1" value="" maxlength="3" id="integ" name="integ[]" value="" placeholder="número" /></div>
               	  <div class="mix1" data-myorder="2"><input type="text" data-validation="number" data-validation-allowing="range[-99;999],negative" step="1" value="" maxlength="3" id="integ" name="integ[]" value="" placeholder="número" /></div>
               	  <div class="mix1" data-myorder="3"><input type="text" data-validation="number" data-validation-allowing="range[-99;999],negative" step="1" value="" maxlength="3" id="integ" name="integ[]" value="" placeholder="número" /></div>
               </div>    
               <br />
               <p><input type="submit" id="submit" style="width:120px;" value="Validar"></p>
-              <input type="hidden" name="link" id="link" value="<?php echo $_SERVER['REQUEST_URI']; ?>" />
+              <input type="hidden" name="link" id="link" value="<?php echo $_SERVER['REQUEST_URI']; ?>" />   <!-- input hidden para enviar la ruta actual por el formulario -->
           </form>
-          <div class="error"></div>
       </div>
       <script type="text/javascript">
-        $.validate();
+        $.validate();  // Función del form-validator que llama y valida que los valores ingresados sean enteros
       </script>
   </body>
 </html>
