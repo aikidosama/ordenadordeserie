@@ -1,12 +1,12 @@
 $(document).ready(function () {
 
-        var sortOrder = 'desc',
+        var sortOrder = 'desc',        
             $container = $('#container'),
-            $toggleSort = $('.toggle-sort');
+            $toggleSort = $('.toggle-sort');   // Variables de mixitup que se utilizaran para el reordeanmiento de elementos
 
-        $container.mixItUp();
+        $container.mixItUp();  // Se llama a la funcion mixitup
   
-        $toggleSort.on('click', function() {
+        $toggleSort.on('click', function() {   // Función que genera un método toggle ascendente/descendente
             switch (sortOrder) {
                 case 'desc':
                   sortOrder = 'asc';
@@ -15,6 +15,6 @@ $(document).ready(function () {
                   sortOrder = 'desc';
                 break;                
             }
-            $container.mixItUp('sort', 'myorder:' + sortOrder);
+            $container.mixItUp('sort', 'myorder:' + sortOrder);  // Se llama a la función mixitup con las variables de ordenamiento
         });
 });
