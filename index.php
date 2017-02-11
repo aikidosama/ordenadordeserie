@@ -15,7 +15,6 @@
   <body>
       <div id="wrapper">
           <div class="controls">  <!-- Clase de botones de control de mixitup -->
-            <div>Los números deben ser enteros y no deben repetirse</div>
             <button class="item button" data-ref="button-add-new">Agregar números</button>  <!-- Llama a la función buttonAddNew de mixitup -->
           </div>
           <form action="result.php" id="the-form"  method="post"  >
@@ -23,9 +22,10 @@
                   <div class="mix1" data-myorder="1"><input type="text" data-validation="number" data-validation-allowing="range[-99;999],negative" step="1" value="" maxlength="3" id="integ" name="integ[]" value="" placeholder="número" /></div>
               	  <div class="mix1" data-myorder="2"><input type="text" data-validation="number" data-validation-allowing="range[-99;999],negative" step="1" value="" maxlength="3" id="integ" name="integ[]" value="" placeholder="número" /></div>
               	  <div class="mix1" data-myorder="3"><input type="text" data-validation="number" data-validation-allowing="range[-99;999],negative" step="1" value="" maxlength="3" id="integ" name="integ[]" value="" placeholder="número" /></div>
-              </div>    
-              <br />
-              <p><input type="submit" id="submit" style="width:120px;" value="Validar"></p>
+              </div>
+              <div class="clear" />
+              <div class="info">Los números deben ser enteros y no repetirse</div>
+              <p><input type="submit" id="submit" class="submit" value="Validar"></p>
               <input type="hidden" name="link" id="link" value="<?php echo $_SERVER['REQUEST_URI']; ?>" />   <!-- input hidden para enviar la ruta actual por el formulario -->
           </form>
       </div>
