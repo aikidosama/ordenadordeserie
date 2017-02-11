@@ -1,0 +1,113 @@
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html{
+	top: 0;
+	height: 100%;
+	text-align: center;
+	margin: 0 auto;
+	padding: 0;
+	background: no-repeat center center #fff;
+	overflow:scroll;
+}
+
+body {
+	top: 0;
+	height: 100%;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+	text-align: left; 
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 1.5em;
+}
+
+* { font-family:Arial; }
+h2 { padding:0 0 5px 5px; }
+h2 a { color: #224f99; }
+a { color:#999; text-decoration: none; }
+a:hover { color:#802727; }
+p { padding:0 0 5px 0; }
+
+.controls{
+  display: inline-block;	
+  width: 100%;
+  height: 30%;
+}
+
+label{
+  font-weight: 300;
+  margin: 0 .4em 0 0;
+}
+
+button{
+  display: inline-block;
+  padding: .4em .8em;
+  background: #666;
+  border: 0;
+  color: #ddd;
+  font-size: 16px;
+  font-weight: 300;
+  border-radius: 4px;
+  cursor: pointer;
+  float: left;
+  width: 10%;
+  margin: 5px 5px;
+}
+
+button.active{
+  background: #68b8c4;
+}
+
+button:focus{
+  outline: 0 none;
+}
+
+button, input {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+div .mix1 {
+	float: left;
+	display: inline-block;
+  	margin: 5px 5px;
+	width: 60px;
+  	height: 40px;
+	padding: 1px;
+  border: 1px solid #999;
+  border-radius:1px; 
+  -moz-border-radius:1px; 
+  -web-kit-border-radius:1px; 
+  -khtml-border-radius:1px;
+}
+
+div .mix {
+  float: left;
+  display: inline-block;
+    margin: 5px 5px;
+  width: 60px;
+    height: 40px;
+  padding: 1px;
+  border: none;
+}
+
+input {
+  display: inline-block;
+  width: 50px;
+  height: 30px;
+  padding: 5px;
+  border: none;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+input[type="text"]:disabled {
+  background-color: white;
+}
+input.disabled {
+  background-color: white;
+}
